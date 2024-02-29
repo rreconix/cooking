@@ -1,0 +1,66 @@
+.recipe-name:hover {
+	text-decoration: underline;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.recipe-grid {
+	grid-template-columns: repeat(auto-fill, 200px);
+}
+
+.recipe-grid-container {
+	width: 100%;
+	max-width: 75%;
+}
+
+.recipe-item:hover svg {
+	opacity: 1;
+}
+
+.heart {
+	opacity: 0;
+	transition: opacity 200ms;
+	width: 28px;
+	height: auto;
+	margin: 0.25rem;
+}
+
+.heart path {
+	stroke: #fff;
+	stroke-width: 1.5px;
+	fill: transparent;
+	cursor: pointer;
+	transition: fill 100ms;
+}
+
+.recipe-item.favorited path {
+	fill: white;
+}
+
+.heart path:hover {
+	fill: white;
+}
+
+input {
+	float: left;
+}
+
+.field {
+	max-width: 300px;
+	font-size: 0.5rem;
+	font-size: clamp(0.25rem, 0.35rem + 0.75vw, 1rem);
+}
+
+.vanta-canvas {
+	position: static !important;
+	height: 100vh !important;
+}
